@@ -1,0 +1,106 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Rule: Confidence-Based Development Workflow
+
+## Core Principle
+**DO NOT make any changes until you have 95% confidence** that you know what to build. Use progressive questioning to achieve the required confidence level.
+
+## Confidence Levels and Actions
+
+### 95%+ Confidence: Direct Implementation
+- **Action**: Proceed directly with immediate code modification
+- **Criteria**: 
+  - Requirements are crystal clear and complete
+  - Technical implementation approach is well-defined
+  - Business requirements and technical constraints are fully understood
+  - All dependencies and impacts are identified
+- **Workflow**: Implement changes immediately without waiting for approval
+  ```
+  I understand the requirements with **95%+ confidence**. I will proceed with implementation immediately.
+
+  [Implement changes directly and provide summary after completion]
+  ```
+
+### 70-94% Confidence: Structured Planning
+- **Action**: Create comprehensive implementation plan with assumptions clarification
+- **Criteria**:
+  - Core requirements are understood but some details need clarification
+  - Technical approach is generally clear
+  - Minor gaps in understanding exist but can be addressed during planning
+- **Planning Format**:
+  ```
+  I understand the requirements with approximately **[X]% confidence**. I will present a step-by-step implementation plan.
+
+  ## 📋 Implementation Plan
+
+  ### Overview
+  [Brief description of what will be achieved]
+
+  ### 📁 File Structure
+  ```
+  project-root/
+  ├── path/to/file1.java        # Core business logic implementation
+  ├── path/to/file2.gradle      # Dependency additions
+  └── path/to/file3.properties  # Configuration changes
+  ```
+
+  ### Files to be Modified/Created:
+  1. **File 1**: `path/to/file1.java`
+     - **Changes**: [Specific changes]
+     - **Reason**: [Why changes are needed]
+
+  2. **File 2**: `path/to/file2.gradle`
+     - **Changes**: [Specific changes]
+     - **Reason**: [Why changes are needed]
+
+  ### Assumptions and Considerations:
+  - [Dependencies between changes]
+  - [Potential risk factors]
+  - [Testing requirements]
+
+  ### Impact Assessment:
+  - **Impact Level**: Low/Medium/High
+  - **Scope of Impact**: [Which parts of the system will be affected]
+
+  Type "go" to proceed with implementation, or let me know if you have questions/modifications.
+  ```
+
+### Below 70% Confidence: Clarifying Questions Required
+- **Action**: Ask structured follow-up questions with recommendations
+- **Criteria**:
+  - Are business requirements fully specified?
+  - Are acceptance criteria defined?
+  - Are edge cases identified?
+  - Are non-functional requirements clear?
+  - Is the implementation approach well-defined?
+  - Are technical constraints identified?
+  - Are dependencies and integrations clear?
+  - Is the architecture impact understood?
+  - Are potential risks identified?
+  - Is the scope of changes understood?
+  - Are testing requirements clear?
+- **Question Format**:
+  ```
+  ## 🔍 Clarifying Questions
+  
+  ### 1. [Question about requirement clarity]
+  1.1) [Option A]
+  1.2) [Option B] 
+  1.3) [Option C]
+  1.4) [Option D]
+  
+  ### 2. [Question about technical approach]
+  2.1) [Option A]
+  2.2) [Option B]
+  2.3) [Option C]
+  
+  ## 💡 Common Use Case Recommendations
+  
+  **A. [Common Pattern/Scenario]**
+  - [Step-by-step guidance]
+  - [Architecture recommendation]
+  - [Implementation example]
+  ```
